@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Actualizar empleado {% endblock title %}
+
+
+{% block content %}
+
+    {% include 'includes/header.html' %}
+    <div class="grid-container">
+        <div class="grid-x">
+            <h1 class="cell">Modificar datos de empleado</h1>
+        </div>
+        <div class="cell">                
+            <form class="grid-x grid-margin-x" method="POST">{% csrf_token %}
+                <div class="cell large-6">
+                    <label>Nombres:
+                        {{ form.first_name }}
+                    </label>
+                </div>
+                <div class="cell large-6">
+                    <label>Apellidos:
+                        {{ form.second_name }}
+                    </label>
+                </div>
+                <div class="cell large-6">
+                    <label>Trabajo:
+                        {{ form.job }}
+                    </label>
+                </div>
+                <div class="cell large-6">
+                    <label>Departamento:
+                        {{ form.departamento }}
+                    </label>
+                </div>
+                <div class="cell large-6">
+                    <label>Habilidades:
+                        {{ form.Habilidades }}
+                    </label>
+                </div>  
+                <div class="cell">
+                    <button type='submit' class="button success">Actualizar</button>
+                </div>
+                
+            </form>
+        </div>
+
+    </div>
+    
+
+    
+{% endblock content %}
+    

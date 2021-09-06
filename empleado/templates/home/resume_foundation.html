@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/foundation.min.css' %}">
+    <title>PAGINAfOUNDATION</title>
+</head>
+<body>
+    <h1>Resume Foundation</h1>    
+    <div class ="grid-x" style="border: 1px solid green;">
+        <h2 class="cell large-2" style="border: 1px solid blue;">elemento 1</h2>
+        <h2 class='cell large-6' style="border: 1px solid red;">elemento 2</h2>
+        <h2 class='cell large-4' style="border: 1px solid purple;">elemento 3</h2>
+        <div class ="cell large-4 grid-x" style="border: 1px solid rebeccapurple;">
+            <h4 class="cell large-2"> otro elemento</h4>
+            <h4 class="cell large-2"> otro elemento</h4>
+            <h4> otro elemento</h4>
+        </div>
+    </div>
+</body>
+</html>

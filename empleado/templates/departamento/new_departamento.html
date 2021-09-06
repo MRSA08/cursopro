@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} listar empleados {% endblock title %}
+
+
+{% block content %}
+
+    {% include 'includes/header.html' %}
+    <div class="grid-container">
+        <div class="grid-x">
+            <h1 class="cell">REGISTRAR NUEVO DEPARTAMENTO</h1>
+        </div>
+        <form class="cell callout grid-x grid-margin-x" method="POST">{% csrf_token %}
+            <div class="cell large-6">
+                <label>Nombres:
+                    {{ form.nombre }}
+                </label>
+            </div>
+            <div class="cell large-6">
+                <label>Apellidos:
+                    {{ form.apellidos }}
+                </label>
+            </div>
+            <div class="cell large-6">
+                <label>Departamento:
+                    {{ form.departamento }}
+                </label>
+            </div>
+            <div class="cell large-6">
+                <label>Nombre Corto:
+                    {{ form.short_name }}
+                </label>
+            </div>
+            <div class="cell medium-12">
+                <button type='submit' class="button success"> Guardar </button>
+            </div>
+        </form>
+    </div>
+       
+{% endblock content %}
+    
