@@ -18,6 +18,7 @@ DATABASES = {
     }
 }"""
 
+""" #CONEXION CON BD EN LA MAQUINA DE OFICINAS
 DATABASES = {
     'default' : {
         'ENGINE' : 'django.db.backends.mysql',
@@ -25,6 +26,17 @@ DATABASES = {
         'USER' : 'root',
         'PASSWORD' : '',
         'HOST' : '10.10.1.202',
+        'PORT' : 3306
+    }
+}"""
+#CONEXION CON LA BD EN EL SERVIDOR DO
+DATABASES = {
+    'default' : {
+        'ENGINE' : 'django.db.backends.mysql',
+        'NAME' : 'testpapdo',
+        'USER' : 'adminpap',
+        'PASSWORD' : 'rsaM8pap_',
+        'HOST' : '137.184.27.227',
         'PORT' : 3306
     }
 }
